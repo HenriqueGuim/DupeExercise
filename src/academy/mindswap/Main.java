@@ -26,7 +26,7 @@ public class Main {
                 new Orange(4)
         );
 
-        DupeFinder dupeFinder = new DupeFinder(fruits);
+        DupeFinder<Fruit> dupeFinder = new DupeFinder<>(fruits);
         System.out.println(dupeFinder.checkDupes()); //prints the number of dupes
 
         for (Fruit fruit : dupeFinder.getDupes()) {  //only prints dupes

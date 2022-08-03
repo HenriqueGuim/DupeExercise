@@ -16,7 +16,7 @@ public abstract class Fruit implements Comparable<Fruit> {
 
     @Override
     public int compareTo(Fruit o) {
-        if( this.equals(o)){
+       if( this.equals(o)){
             return 0;
         }
         return this.getAcidity() > o.getAcidity()? 1:-1;
@@ -39,10 +39,8 @@ public abstract class Fruit implements Comparable<Fruit> {
 
     @Override
     public String toString() {
-        return "Fruit{" +
+        return this.getClass().getSimpleName() +"{" +
                 "acidity=" + acidity +
                 '}';
     }
-
-
 }
